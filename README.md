@@ -91,35 +91,36 @@ Institutes can log in via MetaMask, input student details, and issue certificate
 Students can retrieve their certificates and provide them to Employers for verification.
 Employers can verify certificates by entering the Certificate ID or uploading the certificate file.
 Verification results will confirm if the certificate is authentic or tampered with.
-Workflow
-1. Certificate Issuance Process:
-The institute logs in using MetaMask.
-The institute inputs the certificate details.
-A unique Certificate ID (CID) is generated, and the certificate's data is hashed.
-The hash is signed with the issuer’s private key, and the signed certificate is stored on the blockchain.
-The certificate PDF is uploaded to IPFS, and the CID of the PDF is stored on the blockchain.
-2. Certificate Verification Process:
-Employers log in using MetaMask.
-Employers can either input the Certificate ID or upload the certificate PDF.
-The certificate details and hash are retrieved from the blockchain.
-The hash of the uploaded certificate is recalculated and compared with the one stored on the blockchain.
-If the hashes match, the certificate is valid; otherwise, it is flagged as invalid.
-Contributing
-We welcome contributions from the community! To contribute to this project:
+### 🔄 Workflow
 
-Fork the repository:
--**Create a new branch for your feature or fix.**
--**Commit your changes and push to your branch.**
--**Submit a pull request to the main repository.**
+#### **1. Certificate Issuance Process**:
 
-License
-This project is licensed under the MIT License - see the LICENSE file for details.
+1. **Institute Login**: The institute logs in using **MetaMask** to authenticate and sign transactions.
+2. **Certificate Details Input**: The institute inputs the student's details, course information, and other certificate-related metadata.
+3. **Unique Certificate ID (CID)**: A **Certificate ID** is generated for each certificate. This ID is unique and ensures the certificate’s traceability.
+4. **Data Hashing**: The certificate data is **hashed** using a secure hashing algorithm (e.g., SHA-256) to ensure data integrity.
+5. **Digital Signature**: The hash is signed with the issuer’s **private key** via MetaMask, ensuring the certificate’s authenticity.
+6. **Blockchain Storage**: The signed certificate hash, along with metadata, is stored on the **Ethereum blockchain**.
+7. **Certificate Storage on IPFS**: The certificate PDF file is uploaded to **IPFS** (InterPlanetary File System), providing decentralized storage. The **CID** (Content Identifier) of the uploaded PDF is then stored on the blockchain.
 
-Acknowledgments
--Ethereum for providing the decentralized platform for secure, transparent transactions.
--IPFS for enabling decentralized storage and efficient file retrieval.
--MetaMask for secure login and transaction signing.
--Truffle for simplifying smart contract development and deployment.
--Streamlit for building the frontend web application.
--Ganache CLI for running a local Ethereum blockchain for development and testing.
+#### **2. Certificate Verification Process**:
+
+1. **Employer Login**: Employers log in via **MetaMask** for authentication and to ensure secure access.
+2. **Input Certificate ID or Upload PDF**: Employers can either manually input the **Certificate ID** or upload the **certificate PDF** for verification.
+3. **Blockchain Retrieval**: The system retrieves the certificate’s metadata, including the hash and issuer’s public key, from the blockchain.
+4. **Hash Comparison**: The system recalculates the hash of the uploaded certificate and compares it with the hash stored on the blockchain.
+5. **Verification Result**:
+   - If the hashes **match**, the certificate is verified as **authentic**.
+   - If the hashes **don’t match**, the certificate is flagged as **tampered** or **invalid**.
+
+---
+
+## 🤝 Contributing
+
+We welcome contributions from the community! To contribute to this project, please follow these steps:
+
+1. **Fork the repository** to create your own copy of the project.
+2. **Create a new branch** for your feature or fix.
+3. **Commit your changes** and push them to your branch.
+4. **Submit a pull request** to the main repository for review.
 
