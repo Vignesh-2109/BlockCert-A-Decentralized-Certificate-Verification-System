@@ -87,9 +87,6 @@ Start the Streamlit app to open the frontend application in your browser.
 streamlit run app.py
 ```
 Access the DApp:
-
-Open your browser and go to http://localhost:8501 to access the certificate verification system.
-Usage
 Institutes can log in via MetaMask, input student details, and issue certificates.
 Students can retrieve their certificates and provide them to Employers for verification.
 Employers can verify certificates by entering the Certificate ID or uploading the certificate file.
@@ -111,9 +108,9 @@ Contributing
 We welcome contributions from the community! To contribute to this project:
 
 Fork the repository.
--Create a new branch for your feature or fix.
--Commit your changes and push to your branch.
--Submit a pull request to the main repository.
+-**Create a new branch for your feature or fix.**
+-**Commit your changes and push to your branch.**
+-**Submit a pull request to the main repository.**
 
 License
 This project is licensed under the MIT License - see the LICENSE file for details.
