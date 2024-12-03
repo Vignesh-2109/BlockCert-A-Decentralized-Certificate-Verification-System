@@ -107,7 +107,7 @@ If the hashes match, the certificate is valid; otherwise, it is flagged as inval
 Contributing
 We welcome contributions from the community! To contribute to this project:
 
-Fork the repository.
+Fork the repository:
 -**Create a new branch for your feature or fix.**
 -**Commit your changes and push to your branch.**
 -**Submit a pull request to the main repository.**
