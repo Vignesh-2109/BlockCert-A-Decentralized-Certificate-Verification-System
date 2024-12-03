@@ -44,39 +44,48 @@ Make sure you have the following installed:
 - **Ganache CLI**: Install Ganache for running a local Ethereum blockchain:
   ```bash
   npm install -g ganache-cli
-
-Truffle: Install Truffle for smart contract development:
+  ```
+-**Truffle**: Install Truffle for smart contract development:
+``` bash
 npm install -g truffle
+```
+
 Installation Steps
 Clone the Repository:
 
-bash
-Copy code
+``` bash
 git clone https://github.com/Vignesh-2109/BlockCert-A-Decentralized-Certificate-Verification-System.git
+```
+
 Install Dependencies:
 
-bash
-Copy code
+```bash
+
 cd BlockCert-A-Decentralized-Certificate-Verification-System
+```
+```
 npm install
+```
 Setup Ganache:
 
 Start Ganache CLI in a separate terminal window to run a local Ethereum blockchain.
-bash
-Copy code
+``` bash
+
 ganache-cli
+```
 Deploy Smart Contracts:
 
 Navigate to the Truffle directory and deploy the smart contracts to your local blockchain.
-bash
-Copy code
+```bash
+
 truffle migrate
+```
 Run the Web Application:
 
 Start the Streamlit app to open the frontend application in your browser.
-bash
-Copy code
+```bash
 streamlit run app.py
+```
 Access the DApp:
 
 Open your browser and go to http://localhost:8501 to access the certificate verification system.
@@ -102,17 +111,18 @@ Contributing
 We welcome contributions from the community! To contribute to this project:
 
 Fork the repository.
-Create a new branch for your feature or fix.
-Commit your changes and push to your branch.
-Submit a pull request to the main repository.
+-Create a new branch for your feature or fix.
+-Commit your changes and push to your branch.
+-Submit a pull request to the main repository.
+
 License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
 Acknowledgments
-Ethereum for providing the decentralized platform for secure, transparent transactions.
-IPFS for enabling decentralized storage and efficient file retrieval.
-MetaMask for secure login and transaction signing.
-Truffle for simplifying smart contract development and deployment.
-Streamlit for building the frontend web application.
-Ganache CLI for running a local Ethereum blockchain for development and testing.
+-Ethereum for providing the decentralized platform for secure, transparent transactions.
+-IPFS for enabling decentralized storage and efficient file retrieval.
+-MetaMask for secure login and transaction signing.
+-Truffle for simplifying smart contract development and deployment.
+-Streamlit for building the frontend web application.
+-Ganache CLI for running a local Ethereum blockchain for development and testing.
 
